@@ -1,13 +1,18 @@
 // import logo from "./logo.svg";
+// Guardando la console le get e post funzinano però non so di che tipo di errori danno  al momento
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import MyNav from "./Componets/MyNav";
-import Main from "./Componets/Main";
+import Ricerca from "./Componets/Main";
+import ParteSotto from "./Componets/ParteSotto";
 function App() {
   return (
     <>
       <MyNav></MyNav>
-      <Main></Main>
+      <Ricerca></Ricerca>
+
+      <ParteSotto></ParteSotto>
     </>
   );
 }

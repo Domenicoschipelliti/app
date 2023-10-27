@@ -86,7 +86,12 @@ const MyNavbar = () => {
         </Container>
       </Navbar>
       <div className="d-flex">
-        <h2 className="text-light ms-3">TvShows</h2>
+        <h2 className="text-light ms-3 me-3">TvShows</h2>
+        <NavDropdown title="Genres" className="text-light pt-2">
+          <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+        </NavDropdown>
       </div>
     </>
   );
