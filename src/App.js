@@ -5,14 +5,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import MyNav from "./Componets/MyNav";
 import Ricerca from "./Componets/Main";
-import ParteSotto from "./Componets/ParteSotto";
+import ArteSotto from "./Componets/ParteSotto";
 function App() {
   return (
     <>
       <MyNav></MyNav>
       <Ricerca></Ricerca>
 
-      <ParteSotto></ParteSotto>
+      <ArteSotto></ArteSotto>
     </>
   );
 }

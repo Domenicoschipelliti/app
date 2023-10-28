@@ -47,7 +47,7 @@ const MyNavbar = () => {
               </Nav.Link>
             </Nav>
             <Nav>
-              <Form inline>
+              <Form inline="true">
                 <Row>
                   <Col xs="auto">
                     <Form.Control
@@ -55,7 +55,6 @@ const MyNavbar = () => {
                       placeholder="Kids"
                       className=" mr-sm-2"
                     />
-                    <i class="bi bi-search"></i>
                   </Col>
                   <Col xs="auto">
                     <Button type="submit" className="me-3">
@@ -66,7 +65,7 @@ const MyNavbar = () => {
               </Form>
 
               <NavDropdown
-                title={<i class="bi bi-person-circle"></i>}
+                title={<i className="bi bi-person-circle"></i>}
                 className="bg-light h-25"
                 id="basic-nav-dropdown"
               >

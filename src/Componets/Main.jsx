@@ -1,10 +1,9 @@
 import { Component } from "react";
-import { Container, Row } from "react-bootstrap";
-import Film from "./Film";
+import { Container, Row, Col, Card } from "react-bootstrap";
 
 class Ricerca extends Component {
   state = {
-    film: [],
+    Search: [],
   };
 
   componentDidMount = async () => {
@@ -16,7 +15,7 @@ class Ricerca extends Component {
       if (risposta.ok) {
         const demanda = await risposta.json();
         console.log(demanda);
-        this.setState({ film: demanda });
+        this.setState({ Search: demanda });
       } else {
         console.log("errore");
       }
@@ -30,19 +29,16 @@ class Ricerca extends Component {
     return (
       <Container style={{ margin: 220 }}>
         <Row>
-          {
-            <Film></Film>
-            /* {this.state.film.map((films) => {
-            return this.setState(
-              <Col>
-                <img src={films.Poster} alt="" />
-                <h2>{films.Title}</h2>
-                <p>{films.Year}</p>
-                <p>{films.Type}</p>
-              </Col>
-            );
-          })} */
-          }
+          <Col md={8} key={this.state.Search.imdbID}>
+            <Card>
+              <Card.Img variant="top" src={this.state.Search.Poster} />
+              <Card.Body>
+                <Card.Title>{this.state.Search.Title}</Card.Title>
+                <Card.Text>{this.state.Search.Type}</Card.Text>
+                <Card.Text>{this.state.Search.Year}</Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
         </Row>
       </Container>
     );

@@ -1,13 +1,13 @@
 import { Card } from "react-bootstrap";
 
-const ParteSotto = () => {
+const ArteSotto = () => {
   return (
     <Card className="text-center bg-dark">
       <Card.Header>
-        <i class="bi bi-facebook text-light me-2"></i>
-        <i class="bi bi-twitter-x text-light me-2"></i>
-        <i class="bi bi-youtube text-light me-2"></i>
-        <i class="bi bi-instagram text-light me-2"></i>
+        <i className="bi bi-facebook text-light me-2"></i>
+        <i className="bi bi-twitter-x text-light me-2"></i>
+        <i className="bi bi-youtube text-light me-2"></i>
+        <i className="bi bi-instagram text-light me-2"></i>
       </Card.Header>
 
       <Card.Body>
@@ -20,4 +20,4 @@ const ParteSotto = () => {
   );
 };
 
-export default ParteSotto;
+export default ArteSotto;
