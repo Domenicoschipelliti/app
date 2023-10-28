@@ -47,7 +47,7 @@ class Ricerca extends Component {
         <Row>
           {this.state.Search.map((ricerca) => {
             return (
-              <Col md={8} key={ricerca.imdbID}>
+              <Col md={3} key={ricerca.imdbID}>
                 <Card>
                   <Card.Img variant="top" src={ricerca.Poster} />
                   <Card.Body>
